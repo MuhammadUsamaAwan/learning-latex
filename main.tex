@@ -2,10 +2,18 @@
 \usepackage{amsmath,amssymb,amsthm} % AMS packages, for math
 \usepackage{float} % for H in figure
 \usepackage{enumerate} % for customizing lists
+\usepackage{hyperref} % for hyperlinks
 \pagestyle{empty}
 \parindent 0pt
 
-\begin{document} 
+\title{My First \LaTeX\ Document}
+\author{Your Name}
+\date{\today}
+
+\begin{document}
+\tableofcontents
+\maketitle
+
 Hello! This is my \LaTeX\ document.
 
 A rectangle has side length of $(x+1)$ and area of $(x+3)$. The equation $A(x)=x^2+2x+1$ is the area of the rectangle.
@@ -165,5 +173,98 @@ lists
     \item Second item
     \item Third item
 \end{itemize}
+
+% Text and Document Formatting
+
+\pagebreak
+
+This is a \textbf{bold} word.
+
+This is a \textit{italic} word.
+
+This is a \underline{underlined} word.
+
+This is a \texttt{typewriter} word.
+
+This is a \textsc{small caps} word.
+
+This is a \textbf{\textit{bold italic}} word.
+
+\vspace{1cm}
+
+This is a \begin{large}large\end{large} word.
+
+This is a \begin{Large}Large\end{Large} word.
+
+This is a \begin{huge}huge\end{huge} word.
+
+This is a \begin{Huge}Huge\end{Huge} word.
+
+This is a \begin{normalsize}Normal\end{normalsize} word.
+
+This is a \begin{small}small\end{small} word.
+
+This is a \begin{scriptsize}Script Size\end{scriptsize} word.
+
+This is a \begin{tiny}tiny\end{tiny} word.
+
+\vspace{1cm}
+
+\begin{center}
+    This is centered text.
+\end{center}
+
+\begin{flushleft}
+    This is left-aligned text.
+\end{flushleft}
+
+\begin{flushright}
+    This is right-aligned text.
+\end{flushright}
+
+% \vspace{1cm}
+
+% \centering
+% This is centered text.
+
+% \raggedright
+% This is left-aligned text.
+
+% \raggedleft
+% This is right-aligned text.
+
+% \Large
+% This is large text.
+
+% \normalsize
+% This is normal text.
+
+% \small
+% This is small text.
+
+\vspace{1cm}
+
+Visit \url{http://www.google.com} for more information.
+
+Visit \href{http://www.google.com}{Google} for more information.
+
+% \vspace{1cm}
+
+\section{First Section}
+
+\subsection{First Subsection}
+
+\subsubsection{First Subsubsection}
+
+\subsection{Second Subsubsection}
+
+\section{Second Section}
+
+\subsection{First Subsection}
+
+\subsubsection*{First Subsubsection}
+
+
+% Packages
 
 \end{document}
