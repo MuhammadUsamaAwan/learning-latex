@@ -1,16 +1,22 @@
-\documentclass[11pt]{article}
+\documentclass[10pt, letterpaper]{article}
 \usepackage{amsmath,amssymb,amsthm} % AMS packages, for math
 \usepackage{float} % for H in figure
 \usepackage{enumerate} % for customizing lists
 \usepackage{hyperref} % for hyperlinks
+% \usepackage{fullpage} % for fullpage margins
+\usepackage[margin=1in]{geometry} % for custom margins
 \pagestyle{empty}
 \parindent 0pt
+
+\def\eq1{y=\frac{x}{x^2+1}} % macro
+\newcommand{\set}[1]{\setlength\itemsep{#1em}} % for margin
 
 \title{My First \LaTeX\ Document}
 \author{Your Name}
 \date{\today}
 
 \begin{document}
+\set{1.2}
 \tableofcontents
 \maketitle
 
@@ -264,7 +270,10 @@ Visit \href{http://www.google.com}{Google} for more information.
 
 \subsubsection*{First Subsubsection}
 
+% Macros
 
-% Packages
+macros
+
+$\eq1$
 
 \end{document}
