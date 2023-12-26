@@ -5,6 +5,7 @@
 \usepackage{hyperref} % for hyperlinks
 % \usepackage{fullpage} % for fullpage margins
 \usepackage[margin=1in]{geometry} % for custom margins
+\usepackage{graphicx} % for images
 \pagestyle{empty}
 \parindent 0pt
 
@@ -275,5 +276,19 @@ Visit \href{http://www.google.com}{Google} for more information.
 macros
 
 $\eq1$
+
+% Images
+
+\includegraphics[scale=0.5]{1.jpg}
+
+\begin{center}
+    \includegraphics[width=3.5in]{1.jpg}
+\end{center}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=3.5in]{1.jpg}
+    \caption{This is a caption.}
+\end{figure}
 
 \end{document}
