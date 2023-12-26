@@ -1,5 +1,5 @@
 \documentclass[11pt]{article}
-\usepackage{amsmath,amssymb,amsthm}
+\usepackage{amsmath,amssymb,amsthm,float}
 \pagestyle{empty}
 \parindent 0pt
 
@@ -59,4 +59,37 @@ $$2\left\{\frac{1}{x^2-1}\right\}$$
 $$2\left\langle\frac{1}{x^2-1}\right\rangle$$
 
 $$\left.\frac{dy}{dx}\right|_{x=1}$$
+
+tables\\[6pt]
+\begin{tabular}{|c||c|c|c|c|c|}
+ \hline
+ $x$ & 1 & 2 & 3 & 4 & 5 \\ \hline
+ $f(x)$ & 2 & 4 & 6 & 8 & 10 \\ \hline
+\end{tabular}
+
+\vspace{1cm}
+
+\begin{table}[H]
+\centering
+\def\arraystretch{1.2}
+\begin{tabular}{|c||c|c|c|c|c|}
+\hline
+$x$ & 1 & 2 & 3 & 4 & 5 \\ \hline
+$f(x)$ & $frac{1}{2}$ & 4 & 6 & 8 & 10 \\ \hline
+\end{tabular}
+\caption{A table of values for $f(x)=2x$}
+\end{table}
+
+\begin{table}[H]
+\centering
+\def\arraystretch{1.2}
+\caption{The relationship between $f(x)$ and $f'(x)$}
+\begin{tabular}{|c|p{3in}|}
+\hline
+$f(x)$ & $f'(x)$ \\ \hline
+$x > 0$ & The function $f(x)$ is increasing. The function $f(x)$ is increasing. The function $f(x)$ is increasing. The function $f(x)$ is increasing. \\ \hline
+\end{tabular}
+\end{table}
+
+
 \end{document}
