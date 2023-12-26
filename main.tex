@@ -1,5 +1,7 @@
 \documentclass[11pt]{article}
-\usepackage{amsmath,amssymb,amsthm,float}
+\usepackage{amsmath,amssymb,amsthm} % AMS packages, for math
+\usepackage{float} % for H in figure
+\usepackage{enumerate} % for customizing lists
 \pagestyle{empty}
 \parindent 0pt
 
@@ -7,6 +9,8 @@
 Hello! This is my \LaTeX\ document.
 
 A rectangle has side length of $(x+1)$ and area of $(x+3)$. The equation $A(x)=x^2+2x+1$ is the area of the rectangle.
+
+% Mathematical Notation
 
 superscripts $$2x^3$$
 $$2x^{34}$$
@@ -60,6 +64,8 @@ $$2\left\langle\frac{1}{x^2-1}\right\rangle$$
 
 $$\left.\frac{dy}{dx}\right|_{x=1}$$
 
+% tables
+
 tables\\[6pt]
 \begin{tabular}{|c||c|c|c|c|c|}
  \hline
@@ -104,5 +110,60 @@ arrays
     &= 12 + x - 5x^2
 \end{align*}
 
+%lists
+
+lists
+\begin{enumerate}
+    \item First item
+    \item Second item
+    \item Third item
+\end{enumerate}
+
+\vspace{1cm}
+
+\begin{itemize}
+    \item First item
+    \begin{enumerate}
+        \item First subitem
+        \item Second subitem
+        \item Third subitem
+    \end{enumerate}
+    \item Second item
+    \item Third item
+\end{itemize}
+
+\vspace{1cm}
+
+\begin{enumerate}[A.]
+    \item First item
+    \item Second item
+    \item Third item
+\end{enumerate}
+
+\vspace{1cm}
+
+\begin{enumerate} \setcounter{enumi}{5}
+    \item First item
+    \item Second item
+    \item Third item
+\end{enumerate}
+
+\vspace{1cm}
+
+\begin{itemize}
+    \item First item
+    \begin{itemize}
+        \item[] First subitem
+        \item[a)] Second subitem
+        \item[] Third subitem
+        \begin{itemize}
+            \item First subsubitem
+            \item Second subsubitem
+            \item Third subsubitem
+        \end{itemize}
+    \end{itemize}
+    \item Second item
+    \item Third item
+\end{itemize}
 
 \end{document}
